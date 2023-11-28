@@ -1,0 +1,59 @@
+2D Array:
+
+    A 2D array, also known as a two-dimensional array, is a data structure that extends the concept of a one-dimensional array to two dimensions. In a one-dimensional array, elements are stored in a linear sequence, while in a 2D array, elements are organized in rows and columns to form a grid-like structure. This grid can be thought of as a table with rows and columns, much like a spreadsheet.
+
+Creation of 2D Array:
+
+    datatype array_name[rowsize][colsize];
+    Ex: int arr[4][3];
+    it will create an array of integer type with 4 rows and 3 columns.
+
+Memory Allocation:
+
+    1.Row-Major Order:
+
+    Row-major order is a memory storage and traversal scheme used for multi-dimensional arrays, particularly in the context of computer memory. In row-major order:
+
+    1. Elements of a multi-dimensional array are stored in memory one row at a time.
+    2. Rows are stored consecutively in memory, and within each row, elements are stored consecutively in the order they appear in the row.
+
+    -> index = row_index*col+col_index
+    -> row_index = index/col
+    -> col_index = index%col
+
+    If we want to calculate the memory address
+
+    -> Memory_address = base_address + index*size_of_element
+
+        arr[i][j] = base_address + (i*col+j)*size_of_element
+
+    Ex: In Facebook to store email,phoneno and password we can use row major because it will be useful for easy access to the both email and password.
+
+    Note: By Default most of the languages will use Row-Major Memory Allocation.
+
+    2.Column-Major Order:
+
+    Column-major order is another memory storage and traversal scheme used for multi-dimensional arrays, contrasting with row-major order. In column-major order:
+
+    1. Elements of a multi-dimensional array are stored in memory one column at a time.
+    2. Columns are stored consecutively in memory, and within each column, elements are stored consecutively in the order they appear in the column. 
+
+    -> index = row_index*row+col_index
+    -> row_index = index/row
+    -> col_index = index%row
+
+    If we want to calculate the memory address
+
+    -> Memory_address = base_address + index*size_of_element
+
+        arr[i][j] = base_address + (i*row+j)*size_of_element
+
+    Ex: In Bank to store the amount,account and id we they want to calcualte total amount credited to the bank the column major will be useful.
+
+Initialization:
+
+    2D arrays can be initialized with specific values, and the size of the array must be defined during declaration. For example, you might declare a 2D array as int myArray[3][4] to create a 3x4 array that can hold 3 rows and 4 columns of integer values.
+
+Accessing Elements: 
+    
+    To access an element in a 2D array, you specify both the row and column indices. For example, to access the element in the second row and third column of a 2D array named myArray, you would use myArray[1][2], assuming 0-based indexing.
