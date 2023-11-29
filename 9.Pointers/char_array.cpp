@@ -12,7 +12,13 @@ int main()
     char *c=&ch[0];
     cout<<"->"<<c<<endl;
 
+    // If you want to print the address of char type then
+    cout<<(void*)c<<endl;
+    cout<<(void*)ch<<endl;
+    cout<<static_cast<void*>(ch)<<endl;
+
     char temp='z';
     char *p=&temp;
-    cout<<"->"<<p<<endl;
+    cout<<"->"<<p<<endl;//It will print untill find null value
+    cout<<(void*)p<<endl;
 }

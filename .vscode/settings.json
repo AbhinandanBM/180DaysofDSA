@@ -1,6 +1,7 @@
 {
     "cmake.sourceDirectory": "/workspaces/180DaysofDSA/Kadanes_Algprithm",
     "files.associations": {
-        "deque": "cpp"
+        "deque": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -10,11 +10,11 @@ int main()
     cout<<"4th "<<*temp<<endl;
 
     int *ptr=&temp[0];
-    cout<<"4th "<<sizeof(ptr)<<endl;
-    cout<<"4th "<<sizeof(*ptr)<<endl;
-    cout<<"4th "<<sizeof(&ptr)<<endl;
+    cout<<"5th "<<sizeof(ptr)<<endl;
+    cout<<"6th "<<sizeof(*ptr)<<endl;
+    cout<<"7th "<<sizeof(&ptr)<<endl;
 
-    int i=3;
+    int i=2;
     cout<<i[temp]<<endl;
 
 
