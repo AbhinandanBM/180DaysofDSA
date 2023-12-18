@@ -18,12 +18,14 @@ void merge(int arr[],int start,int mid,int end){
         }
     }
 
+    // still contain left array
     while (left<=mid)
     {
         temp[index]=arr[left];
         left++,index++;
     }
 
+    // still contain right array
     while (right<=end)
     {
         temp[index]=arr[right];
@@ -45,8 +47,11 @@ void MergeSort(int arr[],int start,int end){
         return;
 
     int mid = start+(end-start)/2;
+    // left side
     MergeSort(arr,start,mid);
+    // right side
     MergeSort(arr,mid+1,end);
+    // merge the array on sort
     merge(arr,start,mid,end);
 }
 
