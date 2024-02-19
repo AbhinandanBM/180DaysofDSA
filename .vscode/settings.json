@@ -1,7 +1,10 @@
 {
-    "cmake.sourceDirectory": "/workspaces/180DaysofDSA/Kadanes_Algprithm",
-    "files.associations": {
-        "deque": "cpp",
-        "iostream": "cpp"
-    }
+  "cmake.sourceDirectory": "/workspaces/180DaysofDSA/Kadanes_Algprithm",
+  "files.associations": {
+    "deque": "cpp",
+    "iostream": "cpp"
+  },
+  "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+    "clang-analyzer-cplusplus.NewDeleteLeaks"
+  ]
 }
